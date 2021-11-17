@@ -7,3 +7,5 @@ Modification for the evm can be done for additional security.
 Add a finger print sensor and make use of a database
 OR
 add a buzer which gives short beeps when vote button is pressed just to notify the person monitoring if the particular person has casted his vote.
+
+link:- https://cloud.boltiot.com/control?name=BOLT13167493
