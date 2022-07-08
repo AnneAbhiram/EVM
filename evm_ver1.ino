@@ -12,13 +12,13 @@ int calculate;
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 #include <BoltIoT-Arduino-Helper.h> /*this library enables the bolt module and arduino to work together learn https://github.com/Inventrom/boltiot-arduino-helper*/
-#ifndef API_KEY
+/* #ifndef API_KEY
 #define API_KEY   "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx"
 #endif
 #ifndef DEVICE_ID
 #define DEVICE_ID "BOLTxxxxxxxx"
 #endif
-
+*/
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 void setup()
 {
