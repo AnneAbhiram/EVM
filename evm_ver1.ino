@@ -8,10 +8,10 @@ int button3;
 int button4;
 int calculate;
 
-#include <LiquidCrystal_I2C.h> /*this library is essential to use the lcd with i2c protocol*/
-LiquidCrystal_I2C lcd(0x27, 16, 2);
+#include <LiquidCrystal_I2C.h> /*To use the lcd with i2c protocol*/
+LiquidCrystal_I2C lcd(0x27, 16, 2); /*learn@ https://arduinogetstarted.com/tutorials/arduino-lcd-i2c*/
 
-#include <BoltIoT-Arduino-Helper.h> /*this library enables the bolt module and arduino to work together learn https://github.com/Inventrom/boltiot-arduino-helper*/
+#include <BoltIoT-Arduino-Helper.h> /*helps bolt and arduino to work together learn@ https://github.com/Inventrom/boltiot-arduino-helper*/
 /* #ifndef API_KEY
 #define API_KEY   "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx"
 #endif
@@ -19,6 +19,7 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 #define DEVICE_ID "BOLTxxxxxxxx"
 #endif
 */
+
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 void setup()
 {
