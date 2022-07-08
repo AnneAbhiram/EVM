@@ -24,10 +24,10 @@ LiquidCrystal_I2C lcd(0x27, 16, 2); /*learn@ https://arduinogetstarted.com/tutor
 void setup()
 {
   Serial.begin(9600);
-  boltiot.Begin(10,9); /*define TX and RX respectively learn interfacing at https://docs.boltiot.com/docs/arduino-library */
+  boltiot.Begin(10,9); /*define TX and RX respectively learn@ https://docs.boltiot.com/docs/arduino-library */
   lcd.init();
   lcd.backlight();
-  pinMode(7, INPUT_PULLUP);/*using the internal resitance of the arduino - elimiate the use of external resistor*/
+  pinMode(7, INPUT_PULLUP);/*using the internal resitance of the arduino*/
   pinMode(5, INPUT_PULLUP);
   pinMode(4, INPUT_PULLUP);
   pinMode(3, INPUT_PULLUP);
@@ -41,7 +41,7 @@ void loop()
   int button3 = digitalRead(4);
   int button4 = digitalRead(3);
   int calculate = digitalRead(12);
-  boltiot.processPushDataCommand(person_a, person_b, person_c, person_d);/*this is the command which enables the bolt module to check the data of the variables*/
+  boltiot.processPushDataCommand(person_a, person_b, person_c, person_d);/*enables the bolt module to check the data of the variables*/
   if (button1 == 0) INCREASEa();
   if (button2 == 0) INCREASEb();
   if (button3 == 0) INCREASEc();
